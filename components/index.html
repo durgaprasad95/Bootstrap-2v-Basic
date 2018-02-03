@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../bootstrap.min.css">
+    <link rel="stylesheet" href="../bootstrap-responsive.min.css">
+    <link rel="stylesheet" href="mystyle.css" />
+    <title>Understanding Components in Bootstrap</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="text-info">This shows about various components we have in bootstrap</div>
+        <br>
+        <div class="row">
+            <div class="span3">
+                <div class="lead">Dropdown Menus</div>
+                <div class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown">
+                        Dropdown button
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="pull-right" href="#">One</li>
+                        <li href="#">Two</li>
+                        <li href="#">Three</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="span3 dropup">
+                <div class="lead">Dropup Menus</div>
+                <div class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown">
+                        Dropdown button
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="pull-right" href="#">One</li>
+                        <li href="#">Two</li>
+                        <li href="#">Three</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="span3">
+                <div class="lead">Dropdown Menus with dividers</div>
+                <div class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown">
+                        Dropdown button
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li href="#">One</li>
+                        <li href="#">Two</li>
+                        <li href="#">Three</li>
+                        <li class="divider"></li>
+                        <li href="#">Four</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="span3">
+                <div class="lead">Menu in menu</div>
+                <div class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown">
+                        Dropdown button
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li href="#">Alphabets</li>
+                        <li class="dropdown-submenu">
+                            <a href="#">Numbers</a>
+                            <ul class="dropdown-menu">
+                                <li href="#">One</li>
+                                <li href="#">Two</li>
+                                <li href="#">Three</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="span4">
+                <div class="lead">Normal Button Group</div>
+                <div class="btn-group">
+                    <button class="btn">1</button>
+                    <button class="btn">2</button>
+                    <button class="btn">3</button>
+                    <button class="btn">4</button>
+                </div>
+            </div>
+            <div class="span4">
+                <div class="lead">Vertical Button Group</div>
+                <div class="btn-group-vertical">
+                    <button class="btn">1</button>
+                    <button class="btn">2</button>
+                    <button class="btn">3</button>
+                    <button class="btn">4</button>
+                </div>
+            </div>
+            <div class="span4">
+                <div class="lead">Button Group inside a toolbar</div>
+                <div class="btn-toolbar">
+                    <div class="btn-group">
+                        <button class="btn">1</button>
+                        <button class="btn">2</button>
+                        <button class="btn">3</button>
+                        <button class="btn">4</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="span12 lead text-center">Tabs and Pills</div>
+            <div class="span2">
+                <li class="nav-header">Only "nav" class</li>
+                <ul class="nav">
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                    <li>
+                        <a href="#">Sales</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="span3">
+                <li class="nav-header">classes "nav" + "nav-tabs"</li>
+                <li class="nav-header">The odd one here is active</li>
+                <ul class="nav nav-tabs">
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li class="active">
+                        <a href="#">Contact</a>
+                    </li>
+                    <li>
+                        <a href="#">Sales</a>
+                    </li>
+                    <li>
+                        <a href="#">Other</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="span3">
+                <li class="nav-header">classes "nav" + "nav-stacked"</li>
+                <ul class="nav nav-tabs nav-stacked">
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li class="active">
+                        <a href="#">Contact</a>
+                    </li>
+                    <li>
+                        <a href="#">Sales</a>
+                    </li>
+                    <li>
+                        <a href="#">Other</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="span3">
+                <li class="nav-header">classes "nav" + "nav-list"</li>
+                <ul class="nav nav-list">
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li class="active">
+                        <a href="#">Contact</a>
+                    </li>
+                    <li>
+                        <a href="#">Sales</a>
+                    </li>
+                    <li>
+                        <a href="#">Other</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="span6">
+                <li class="nav-header">classes "nav" + "nav-pills"</li>
+                <ul class="nav nav-pills">
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li class="active">
+                        <a href="#">Contact</a>
+                    </li>
+                    <li>
+                        <a href="#">Sales</a>
+                    </li>
+                    <li>
+                        <a href="#">Other</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="span6">
+                <p class="lead">tabbable function with classes "nav" + "nav-tabs"</p>
+                <ul class="nav nav-tabs">
+                    <li>
+                        <a href="#home" data-toggle="tab">Home</a>
+                    </li>
+                    <li class="active">
+                        <a href="#contact" data-toggle="tab">Contact</a>
+                    </li>
+                    <li>
+                        <a href="#sales" data-toggle="tab">Sales</a>
+                    </li>
+                    <li>
+                        <a href="#other" data-toggle="tab">Other</a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane" id="home">
+                        <p>This is Home Tab Content</p>
+                    </div>
+                    <div class="tab-pane active" id="contact">
+                        <p>This is Contact Tab Content</p>
+                    </div>
+                    <div class="tab-pane" id="sales">
+                        <p>This is Sales Tab Content</p>
+                    </div>
+                    <div class="tab-pane" id="other">
+                        <p>This is Other Tab Content</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="span12 text-center">Navigation Bars</div>
+            <nav class="navbar navbar-inverse">
+                <div class="navbar-inner">
+                    <a class="brand" href="#">Numbers</a>
+                    <a class="btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <i class="icon-bar"></i>
+                        <i class="icon-bar"></i>
+                        <i class="icon-bar"></i>
+                    </a>
+                    <div class="nav-collapse collapse">
+                        <ul class="nav">
+                            <li>
+                                <a href="#">One</a>
+                            </li>
+                            <li>
+                                <a href="#">Two</a>
+                            </li>
+                            <li>
+                                <a href="#">Three</a>
+                            </li>
+                            <li>
+                                <a href="#">Four</a>
+                            </li>
+                        </ul>
+                        <form class="navbar-search pull-right input-append">
+                            <input type="search" />
+                            <button class="btn">
+                                <i class="icon-search"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="row">
+            <div class="span12 text-center">Pagination</div>
+            <div class="pagination pagination-centered pagination-large">
+                <ul>
+                    <li class="disabled">
+                        <span>prev</span>
+                    </li>
+                    <li>
+                        <a href="#">1</a>
+                    </li>
+                    <li>
+                        <a href="#">2</a>
+                    </li>
+                    <li class="active">
+                        <a href="#">3</a>
+                    </li>
+                    <li>
+                        <a href="#">next</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="span6 text-center">Labels</div>
+            <div class="span6 text-center">Badges</div>
+            <div class="span6">
+                <p class="label">default label</p>
+                <p class="label label-success">success label</p>
+                <p class="label label-warning">warning label</p>
+                <p class="label label-info">info label</p>
+                <p class="label label-important">important label</p>
+                <p class="label label-inverse">inverse label</p>
+            </div>
+            <div class="span6">
+                <p class="badge">default badge</p>
+                <p class="badge badge-success">success badge</p>
+                <p class="badge badge-warning">warning badge</p>
+                <p class="badge badge-info">info badge</p>
+                <p class="badge badge-important">important badge</p>
+                <p class="badge badge-inverse">inverse badge</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="span12 text-center">Alert</div>
+            <div class="alert alert-success">
+                <button class="close" data-dismiss="alert">&times;</button>
+                <strong>This is Bullshit</strong>
+            </div>
+        </div>
+    </div>
+    <script src="../jquery-3.2.1.min.js"></script>
+    <script src="../bootstrap.min.js"></script>
+</body>
+
+</html>

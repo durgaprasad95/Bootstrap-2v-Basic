@@ -1,0 +1,12 @@
+body {
+    background: grey;
+}
+
+body>div .row {
+    margin-bottom: 10px;
+    background-color: orange;
+}
+
+form {
+    margin-bottom: 30px;
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Understanding widgets in bootstrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="mystyle.css" />
+    <link rel="stylesheet" href="../bootstrap-responsive.min.css">
+    <link rel="stylesheet" href="../bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class=" row">
+            <div class="span6">
+                <div class="text-info">Inspect the buttons how one become active by clicking on it</div>
+                <div class="btn-group" data-toggle="buttons-radio">
+                    <button class="btn btn-primary">1</button>
+                    <button class="btn btn-primary">2</button>
+                    <button class="btn btn-primary">3</button>
+                </div>
+            </div>
+            <div class="span6">
+                <div class="text-info">To change the button's text by clicking on it</div>
+                <button id="buttonSaver" class="btn btn-primary" data-loading-text="Saving">
+                    Save
+                </button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="span12">
+                <a href="#mainModal" class="btn btn-primary" data-toggle="modal">Click here</a>
+                <div class="modal hide fade" id="mainModal">
+                    <div class="modal-header">
+                        <button data-dismiss="modal" class="close" aria-hidden="true">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="lead">This shows the progress that is going on</p>
+                        <div class="progress progress-info">
+                            <div id="progressBar" class="bar"></div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a class="btn btn-primary" data-dismiss="modal">close</a>
+                        <a class="btn btn-primary" id="ok" data-starting-text="started">ok</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="span6 text-center text-info">Tooltips</div>
+            <div class="span6 text-center text-info">Popovers</div>
+            <div class="span3">
+                <a rel="tooltip" data-placement="bottom" href="#" title="Automatic Data Processing">ADP</a>
+            </div>
+            <div class="span3">
+                <a href="#" title="Automatic Data Processing">ADP</a>
+            </div>
+            <div class="span6">
+                <a href="#" rel="popover" data-content="This is where i work" data-original-title="Automatic Data Processing">ADP</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="span12 text-center text-info">Typeahead</div>
+            <div class="span6">
+                <p class="text-info">Using html</p>
+                <div class="input-append">
+                    <input type="search" data-provide="typeahead" data-source="[&quot;English&quot;,&quot;Telugu&quot;,&quot;hindi&quot;]">
+                    <button class="btn btn-primary">Go!</button>
+                </div>
+            </div>
+            <div class="span6">
+                <p class="text-info">Using Js</p>
+                <div class="input-append">
+                    <input id="languages" type="search" data-provide="typeahead">
+                    <button class="btn btn-primary">Go!</button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="span12 text-center text-info">This show how carousel works in html</div>
+            <div id="carousel">
+                <div id="slidingCarousel" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="item">
+                            <img src="../img/glyphicons-halflings.png" />
+                            <div class="carousel-caption">
+                                <h4>Glyphicons- Default</h4>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="../img/glyphicons-halflings-white.png" />
+                            <div class="carousel-caption">
+                                <h4>Glyphicons- Inverse</h4>
+                            </div>
+                        </div>
+                        <a href="#slidingCarousel" class="carousel-control left" data-slide="prev">&lsaquo;</a>
+                        <a href="#slidingCarousel" class="carousel-control right" data-slide="next">&rsaquo;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../jquery-3.2.1.min.js"></script>
+    <script src="../bootstrap.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
